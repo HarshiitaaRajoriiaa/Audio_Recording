@@ -12,7 +12,7 @@ export function Page1() {
             mediaRecorder.start(); // Start recording
             console.log("recording start");
         }
-        navigate("/page2"); // Navigate to Page 2
+        navigate("/page2"); //Navigate to Page 2
     };
 
     useEffect(() => {
