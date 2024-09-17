@@ -10,7 +10,7 @@ export function Page3() {
         e.preventDefault();
         if (mediaRecorder) {
             // Example of additional mediaRecorder actions, if needed
-            console.log("MediaRecorder is available");
+            // console.log("MediaRecorder is available");
             // You can add more operations with mediaRecorder here if necessary
         }
         navigate("/page3"); // Navigate to some other page or route
@@ -34,7 +34,7 @@ export function Page3() {
                             type="submit"
                             className="w-full py-3 bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg text-white font-bold focus:outline-none focus:ring-2 focus:ring-slate-300"
                         >
-                            Submit
+                            Next
                         </button>
                     </form>
                 </div>

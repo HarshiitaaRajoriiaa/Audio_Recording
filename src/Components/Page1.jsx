@@ -42,7 +42,7 @@ export function Page1() {
                             type="submit"
                             className="w-full py-3 bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg text-white font-bold focus:outline-none focus:ring-2 focus:ring-slate-300"
                         >
-                            Next and Start Recording
+                            Next
                         </button>
                     </form>
                 </div>

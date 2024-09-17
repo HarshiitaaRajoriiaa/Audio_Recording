@@ -81,8 +81,8 @@ export function Page2() {
     // React to when recording has stopped and audioUrl is set
     useEffect(() => {
         if (isRecordingStopped && audioUrl) {
-            console.log("Stored Audio URL: ", audioUrl); // Log the stored URL after stopping the recording
-            //navigate("/page3"); // Navigate to Page 3 after URL is generated
+            // console.log("Stored Audio URL: ", audioUrl); // Log the stored URL after stopping the recording
+            // navigate("/page3"); // Navigate to Page 3 after URL is generated
         }
     }, [audioUrl, isRecordingStopped, navigate]);
     const handleDownload = () => {
@@ -105,7 +105,7 @@ export function Page2() {
         <div className="align-self: center min-h-screen flex items-center justify-center">
             <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-4xl p-8 md:p-16 rounded-lg ">
                 <div className="bg-gradient-to-t p-8 rounded-lg shadow-lg w-full h-full max-w-md">
-                    <form onSubmit={handleSubmit}>
+                    <form onSubmit={handleSubmit} className='mb-1-px'>
                         <div className="mb-4">
                             <input
                                 type="number"
@@ -119,14 +119,13 @@ export function Page2() {
                             type="submit"
                             className="w-full py-3 bg-gradient-to-r from-slate-700 to-slate-800 rounded-lg text-white font-bold focus:outline-none focus:ring-2 focus:ring-slate-300"
                         >
-                            Next and End Recording
+                            Next
                         </button>
                     </form>
                     {audioUrl && (
-                        <div>
-                            <p>Recorded Audio:</p>
+                        <div className='mt-10px'>
                             <audio controls src={audioUrl} />
-                            <button onClick={handleDownload}>Download Recording</button>
+                            <button onClick={handleDownload}>Download</button>
                         </div>
                     )}
                 </div>
