@@ -123,9 +123,9 @@ export function Page2() {
                         </button>
                     </form>
                     {audioUrl && (
-                        <div className='mt-10px'>
+                        <div className='mt-10'>
                             <audio controls src={audioUrl} />
-                            <button onClick={handleDownload}>Download</button>
+                            <button className ='m-3'onClick={handleDownload}>Download</button>
                         </div>
                     )}
                 </div>
